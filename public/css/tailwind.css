@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes scale-in {
+  from {
+    transform: scale(70%);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: scale(100%);
+    opacity: 1;
+  }
+}
+@keyframes slide-in {
+  from {
+    transform: translateY(30%);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+html, body {
+  font-family: 'Oxanium', cursive;
+  background-color: rgba(13, 13, 43, 1);
+  color: white;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+input, select {
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background-color: transparent;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+.default-card {
+  color: black;
+  background-color: #fff;
+}
+#hovered-card {
+  color: white;
+  background-color: #2B076E;
+}
+.coin-card, .mine-btn, .mine-icon {
+  transition: all 500ms ease;
+}
+.scale-in {
+  animation-name: scale-in;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.scale-out {
+  animation-direction: reverse;
+}
+.slide-in {
+  animation-name: slide-in;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.slide-out {
+  animation-direction: reverse;
+}
