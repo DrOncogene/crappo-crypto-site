@@ -9,7 +9,7 @@
 		dim: [6, 16],
 		classes: "bg-sec",
 		iconClasses: "py-3 px-4 bg-[#fff]",
-    animate: [false, true]
+    animateIcon: true
 	}
 
 </script>

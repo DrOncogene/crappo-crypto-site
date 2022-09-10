@@ -17,7 +17,7 @@ module.exports = {
     },
     backgroundImage: {
       "hero-right": "/img/hero-right.svg",
-      "newsletter": "url('/img/mine-now.svg')"
+      "newsletter": "url('/img/newsletter-box.png')"
     },
     screens: {
       'md': '960px',
