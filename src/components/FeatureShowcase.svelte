@@ -16,7 +16,7 @@
   <div class="flex flex-col justify-center self-center space-y-6 lg:self-start {props.order[1]} {props.classes}">
     <h3 class="text-2xl font-bold">{props.title}</h3>
     <p class="text-xs opacity-50">{props.subtitle}</p>
-    <div use:viewport on:enterViewport={(e) => {inViewportAnim(e.target, "scale")}} on:exitViewport={(e) => {outViewportAnim(e.target, "scale")}} class="max-w-[max-content] opacity-0">
+    <div use:viewport on:enterViewport={(e) => {inViewportAnim(e.target, "scale")}} on:exitViewport={(e) => {outViewportAnim(e.target, "scale")}} class="max-w-[max-content]">
       <Button props={{
         text:"Learn More",
         href:"#",
